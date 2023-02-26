@@ -66,7 +66,7 @@ jobs:
         run:  |
           echo "Running httpx"
           mkdir -p out/httpx-1
-          httpx -l out/naabu-1/output.txt -no-color -silent -o out/httpx-1/output.txt
+          httpx -l out/subdomains/subdomains.txt -no-color -silent -o out/httpx-1/output.txt
           echo "Completed httpx"
 
       #- name: Run nuclei on httpx output
@@ -83,7 +83,7 @@ jobs:
           git config --local user.email "jeyaseelans86@gmail.com"
           git config --local user.name "jeyaseelans86"
           git add out/subdomains/subdomains.txt
-          git add out/naabu-1/output.txt
+          #git add out/naabu-1/output.txt
           git add out/httpx-1/output.txt
           #git add out/nuclei-1/output.txt
           git add out/subdomains/subdomains.txt
