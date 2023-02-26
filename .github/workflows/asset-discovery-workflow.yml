@@ -87,12 +87,12 @@ jobs:
         run: |
           echo "Saving output files to Github Repo"
           #cat out/nuclei-1/output.txt | sort -n | uniq | tee out/nuclei-1/output.txt
-          git config --local user.email "jayateertha043@gmail.com"
-          git config --local user.name "jayateertha043"
+          git config --local user.email "jeyaseelans86@gmail.com"
+          git config --local user.name "jeyaseelans86"
           git add out/subdomains/subdomains.txt
           git add out/naabu-1/output.txt
           git add out/httpx-1/output.txt
           #git add out/nuclei-1/output.txt
           git add out/subdomains/subdomains.txt
           git commit -m "Add sorted output" 
-          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/jayateertha043/Asset-Discovery-Actions
+          git push https://${{ secrets.GITHUB_TOKEN }}@github.com/jeyaseelans86/Asset-Discovery-Actions
